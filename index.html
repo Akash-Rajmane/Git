@@ -26,6 +26,7 @@
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
+      <li>Item 5</li>
     </ul>
    </div>
   </div>
@@ -40,6 +41,11 @@
     for(let i=0; i<li.length; i++){
       li[i].style.backgroundColor = "#f4f4f4"; 
     }
+
+    li[4].innerText = "Hello";
+
+    let liItems = document.getElementsByTagName("li");
+    liItems[4].innerText = "THIS IS ITEM 5";
   </script>
 </body>
 </html>
